@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="arrow back" href="index.html"></a>
+    <div id="accent"></div></body>
+    <h1 style="margin-bottom: 0;">Stavros Morrison</h1>
+    <h2 style="margin-top: 0;padding: 0;">Education</h2>
+    <div id="databod">
+        <h2>High Tech High North County | High School Diploma | 2019 - 2023</h2>
+        <p>San Marcos, California</p>
+        <p style="background-color: white; color: black;">4.09 GPA • Calculus Honors • Lead Technician - FRC 4419</p>
+        <a class="viewbutton" href="https://www.hightechhigh.org/hthnc/" target="_blank">↗</a>
+    </div>
+    <div id="databod">
+        <h2>Palomar College | College Education | 2023 - 2025</h2>
+        <p>San Marcos, California</p>
+        <a class="viewbutton" href="https://www.palomar.edu/" target="_blank">↗</a>
+    </div>
+
+
+    <div id="footah">
+        <p>STAVROS MORRISON 2024</p>
+    </div>
+    
+</html>
