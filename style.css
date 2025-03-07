@@ -2,6 +2,15 @@
     font-family: "defont";
     src: url(data/microsoft-yi-baiti-regular.ttf) format("truetype");
     font-weight: 700;
+    color: var(--accent);
+}
+:root{
+  --accent: #12f167;
+  --bg: #05160c;
+}
+* {
+  
+  text-shadow: 0 0 5px #00ff00;
 }
 h1{
   font-family: "defont", sans-serif;
@@ -14,10 +23,11 @@ h1{
     top: 0;
     width: 2vw;
     height: 100vh;
-    background: white;
+    background: var(--accent);
+    box-shadow: 0 0 5px #00ff00;
   }
   #databod {
-    outline: 2px solid rgb(255, 255, 255);
+    outline: 2px solid var(--accent);
     width: 500px;
     margin: 2px;
     margin-top:30px;
@@ -25,6 +35,7 @@ h1{
       
       margin: 5px;
       padding-bottom: 5px;
+      
     }
     h4{
       
@@ -35,6 +46,7 @@ h1{
       font-size: 14pt;
       margin: 5px;
       padding-bottom: 5px;
+      
     }
   }
   .material-symbols-outlined {
@@ -45,11 +57,11 @@ h1{
     'opsz' 24
   }
   .arrow {
-    border: solid rgb(255, 255, 255);
+    border: solid var(--accent);
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
-    background-color: black;
+    background-color: inherit;
   }
 
   .back {
@@ -76,7 +88,7 @@ h1{
   }
 
   .viewbutton{
-    background-color: white;
+    background-color: var(--accent);
     color: rgb(0, 0, 0);
     width: 100%;
     text-align: center;
@@ -87,14 +99,16 @@ h1{
   .viewbutton:hover
   {
     background-color: yellow;
-    color:black;
+    color: black;
   }
 
   body {
     font-family: "defont", sans-serif;
-    background: #000000;
+    background: linear-gradient(to top, #092d1b, #092d1b, #05160c, #05160c);
+    background-size: cover;
+    background-size: 100% 3px;
     margin-left: 4vw;
-    color: white;
+    color: var(--accent);
     /* font-size: 2vh; */
   }
   p{
@@ -115,9 +129,9 @@ h1{
 }
   .btn {
     font-family: "defont", sans-serif;
-    border: white solid 2px;
+    border: var(--accent) solid 2px;
     background-color: inherit;
-    color: white;
+    color: var(--accent);
     padding: 7px 28px;
     margin-top: 8px;
     font-size: 14pt;
@@ -128,7 +142,7 @@ h1{
   .btn:hover {
     background: yellow;
     color: black;
-    border: black solid 2px;
+    border: #092d1b solid 2px;
   }
   #maingrid {
     display: grid;
