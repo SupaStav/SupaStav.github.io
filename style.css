@@ -63,7 +63,31 @@ h1{
     padding: 3px;
     background-color: inherit;
   }
-
+  .backthing{
+    outline: 2px solid var(--bg);
+    width: 15px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: var(--bg);
+    background-color: inherit;
+    background-color: rgba(0,0,0, .3);
+    word-break: break-all;
+  }
+  .backthingback{
+    position: absolute;
+    z-index: 1000;
+    left: .55vw;
+    top: 30px;
+    
+    cursor: pointer;
+  }
+  .backthingback:hover{
+    
+    box-shadow: 0 0 15px black;
+    background-color: rgba(0,0,0, .1);
+  }
+  
   .back {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
@@ -88,7 +112,8 @@ h1{
   }
 
   .viewbutton{
-    background-color: var(--accent);
+    border-top: 2px solid var(--accent);
+    background-color: inherit;
     color: rgb(0, 0, 0);
     width: 100%;
     text-align: center;
@@ -98,7 +123,7 @@ h1{
   }
   .viewbutton:hover
   {
-    background-color: yellow;
+    background-color: var(--accent);
     color: black;
   }
 
@@ -107,6 +132,7 @@ h1{
     background: linear-gradient(to top, #092d1b, #092d1b, #05160c, #05160c);
     background-size: cover;
     background-size: 100% 3px;
+    background-attachment: fixed;
     margin-left: 4vw;
     color: var(--accent);
     /* font-size: 2vh; */
@@ -140,7 +166,7 @@ h1{
     text-decoration: none;
   }
   .btn:hover {
-    background: yellow;
+    background: var(--accent);
     color: black;
     border: #092d1b solid 2px;
   }
